@@ -7,10 +7,11 @@
   <body>
     <header class="main-header">
       <div class="container">
-        <nav class="main-navigation">
+        <div class="top-header">
+          <nav class="main-navigation">
           <ul>
             <li>
-              <a href="#">Студия</a>
+              <a class="active">Студия</a>
             </li>
             <li>
               <a href="#">Клиенты</a>
@@ -22,100 +23,121 @@
               <a href="#">Контакты</a>
             </li>
           </ul>
-      </div>
-      <div class="user-block">
-        <a class="cart" href="#">Корзина</a>
-      </div>
-      <div>
+        </div>
+        <div class="user-block">
+          <a class="cart" href="#">Корзина</a>
+        </div>
+        <div>
           <p>Долго, дорого, скурпулезно.</p>
           <p>Математически выверенный дизайн для ващего сайта или мобильного
           приложения.</p>
           <a class="btn" href="#">Узнать больше</a>
-      <div class="index-logo">
-         <img src="img/index-logo.png" width="368" height="204" alt="Nerds">
-       </div>
-     </header>
-     <main class="container">
-      <div class="product-item">
-          <h2 class="product-name">Веб-сайты</h2>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn" href="#">Заказать</a>
+        <div class="index-logo">
+          <a href=#><img src="img/index-logo.png" width="368" height="204" alt="Nerds"></a>
+        </div>
       </div>
-      <div class="product-item">
-          <h2 class="product-name">Приложения</h2>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn" href="#">Заказать</a>
+      <div class="slider">
       </div>
-        <div class="product-item">
-          <h2 class="product-name">Презентации</h2>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn" href="#">Заказать</a>
-      </div>
-      <hr>
-      <section class="about">
-       <div class="about-items">
-         <div class="about-items-left">
-         <p>Мы-маленькая, но гордая дизайн-студия из Краснодара.</p>
-         <p>Исповедуем принципы минимализма и чистоты.Ставим математический
-           расчет превыше креатиыв. Работаем не покладая рук, как роботы</p>
-         <p>Выполняем заказы на разработку</p>
-          <ul>
-            <li>Веб-сайтов любой сложности</li>
-            <li>Мобильных приложений для iOS и Android</li>
-            <li>Слайдшоу и видео для корпоративных презентаций</li>
-          </ul>
+    </header>
+      <main class="container">
+        <div class="product-items">
+          <div class="product-item">
+            <img src="img/web.png" width="368" height="204" alt="Веб-сайты">
+            <h2 class="product-name">Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+          <div class="product-item">
+            <img src="img/apps.png" width="368" height="204" alt="Приложения">
+            <h2 class="product-name">Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="btn-green" href="#">Заказать</a>
+          </div>
+          <div class="product-item">
+            <img src="img/presentation.png" width="368" height="204" alt="Презентации">
+            <h2 class="product-name">Презентации</h2>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="btn-yellow" href="#">Заказать</a>
+          </div>
+        </div>
+        <section class="about">
+          <div class="block-left">
+            <h1 class="about-tittle">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
+            <p>Исповедуем принципы минимализма и чистоты.Ставим математический
+            расчет превыше креатиыв. Работаем не покладая рук, как роботы</p>
+            <p class="block-tittle">Выполняем заказы на разработку:</p>
+            <ul>
+              <li>Веб-сайтов любой сложности</li>
+              <li>Мобильных приложений для iOS и Android</li>
+              <li>Слайдшоу и видео для корпоративных презентаций</li>
+            </ul>
           </div >
-          <div class="about-items-right">
-            <div class="logo">
-              <img src="img/logo.png" width="368" height="204" alt="Nerds">
+          <div class="block-right">
+            <div class="block-right-logo">
+              <img src="img/blockright-logo.png" width="368" height="204" alt="Nerds">
             </div>
-            <p>С 2004 года любим точность во всем:</p>
-            <div class="features-items">
-              <h2>146%</h2>
-              <p>Уровень самоотдачи</p>
-            </div>
-            <div class="features-items">
-              <h2>100%</h2>
-              <p>Соблюдение сроков</p>
-            </div>
-            <div class="features-items">
-              <h2>50%</h2>
-              <p>Минимальная предоплата</p>
-            </div>
+            <p class="block-tittle">С 2004 года любим точность во всем:</p>
+            <div class="features">
+              <div class="feature">
+                <div class="feature-title">146%</div>
+                <p class="feature-description">Уровень самоотдачи</p>
+              </div>
+              <div class="feature">
+                <div class="feature-title">100%</div>
+                <p class="feature-description">Соблюдение сроков</p>
+              </div>
+              <div class="feature">
+                <div class="feature-title">50%</div>
+                <p class="feature-description">Минимальная предоплата</p>
+              </div>
           </div>
         </section>
-        <hr>
-          <div class="others-logos">
-            <img src="img/others-logos1.png" width="368" height="204" alt="HTML Academy">
-          </div>
-          <div class="others-logos">
-            <img src="img/others-logos2.png" width="368" height="204" alt="Barbershop Borodinski">
-          </div>
-          <div class="others-logos">
-            <img src="img/others-logos3.png" width="368" height="204" alt="Pink">
-          </div>
-          <div class="others-logos">
-            <img src="img/others-logos4.png" width="368" height="204" alt="Mishka">
-          </div>
-        <hr>
-     </main>
-     <footer class="main-footer">
+        <div class="clients">
+          <a class="client"><img src="img/HTMLAcademy-logo.png" width="368" height="204" alt="HTML Academy"></a>
+          <a class="client"><img src="img/Barbershop-logo.png" width="368" height="204" alt="Barbershop Borodinski"></a>
+          <a class="client"><img src="img/Pink-logos.png" width="368" height="204" alt="Pink"></a>
+          <a class="client"><img src="img/Mishka-logos.png" width="368" height="204" alt="Mishka"></a>
+        </div>
+      </main>
+      <footer class="main-footer">
         <div class="map">
-          <img src="img/map.png" width="368" height="204" alt="Nerds design studio">
+          <div class="container">
+            <div class="write-us">
+              <h2>Nerds design studio</h2>
+              <p>191186, Санкт-Петербург,<br>
+              ул. Б. Конюшенная, д. 19/8</p>
+              <p>тел. +7 (812) 275-75-75</p>
+              <a class="btn" href="#">Напишите нам</a>
+            </div>
+          </div>
         </div>
-        <div class="write-to-us">
-          <h2>Nerds design studio</h2>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7 (812) 275-75-75</p>
-          <a class="btn-write" href="#">Напишите нам</a>
+        <div class="bottom-footer">
+          <div class="container">
+            <div class="social-btns">
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </div>
+            <div class="footer-promo">
+              <p class="footer"> Давайте дружить, это выгодно!</p>
+              <p>Скидка 10% для друзей из социальных сетей.</p>
+            </div>
+          </div>
         </div>
-        <div class="container">
-          <section class="footer-social">
-            <h2 class="footer"> Давайте дружить!</h2>
-            <p>Скидка 10% для друзей из социальных сетей.</p>
-            <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
-            <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
-            <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
       </footer>
+      <section class="pop-up">
+        <div class="pop-up-content">
+          <h2 class="pop-up-title">Напишите нам</h2>
+          <form action="#" method="post">
+            <input id="input-name" type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
+            <label for="input-name">Ваше имя:</label>
+            <input id="input-mail" type="text" name="e-mail" value="mail" placeholder="Для отправки ответа">
+            <label for="input-mail">Ваш e-mail:</label>
+            <input id="input-text" type="text" name="text" value="text" placeholder="В свободной форме">
+            <label for="input-text">Текст письма:</label>
+            <button class="btn" type="submit">Отправить</button>
+          </form>
+        </div>
+      </section>
  </body>
 </html>
