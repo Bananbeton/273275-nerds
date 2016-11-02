@@ -8,6 +8,9 @@
     <header class="main-header">
       <div class="container">
         <div class="top-header">
+          <div class="index-logo">
+            <a href=#><img src="img/index-logo.png" width="368" height="204" alt="Nerds"></a>
+          </div>
           <nav class="main-navigation">
             <ul>
               <li>
@@ -23,15 +26,14 @@
               <a href="#">Контакты</a>
               </li>
             </ul>
-        </div>
-        <div class="user-block">
-          <a class="cart" href="#">Корзина</a>
-        </div>
-        <div>
-          <p>Долго, дорого, скурпулезно.</p>
-          <p>Математически выверенный дизайн для ващего сайта или мобильного
+          <div class="user-block">
+            <a class="cart" href="#">Корзина</a>
+          </div>
+          <p class="top-header-title">Долго, дорого, скурпулезно.</p>
+          <p class="top-header-text">Математически выверенный дизайн для ващего сайта или мобильного
           приложения.</p>
           <a class="btn" href="#">Узнать больше</a>
+        </div>
         <div class="index-logo">
           <a><img src="img/index-logo.png" width="368" height="204" alt="Nerds"></a>
         </div>
@@ -62,10 +64,10 @@
       </div>
       <section class="about">
         <div class="block-left">
-          <h1 class="about-tittle">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
+          <h1 class="about-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
           <p>Исповедуем принципы минимализма и чистоты.Ставим математический
           расчет превыше креатиыв. Работаем не покладая рук, как роботы</p>
-          <p class="block-tittle">Выполняем заказы на разработку:</p>
+          <p class="block-title">Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
             <li>Мобильных приложений для iOS и Android</li>
@@ -76,7 +78,7 @@
           <div class="block-right-logo">
             <img src="img/blockright-logo.png" width="368" height="204" alt="Nerds">
           </div>
-          <p class="block-tittle">С 2004 года любим точность во всем:</p>
+          <p class="block-title">С 2004 года любим точность во всем:</p>
           <div class="features">
             <div class="feature">
               <div class="feature-title">146%</div>
@@ -104,9 +106,8 @@
         <div class="container">
           <div class="write-us">
             <h2>Nerds design studio</h2>
-            <p>191186, Санкт-Петербург,<br>
-            ул. Б. Конюшенная, д. 19/8</p>
-            <p>тел. +7 (812) 275-75-75</p>
+            <p class="contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+            <p class="contacts">тел. +7 (812) 275-75-75</p>
             <a class="btn" href="#">Напишите нам</a>
           </div>
         </div>
@@ -125,27 +126,22 @@
         </div>
       </div>
     </footer>
-    <div class="pop-up-content">
-      <p class="pop-up-title">Напишите нам</p>
+    <div class="popup">
+      <p class="popup-title">Напишите нам</p>
       <button class="esc" type="button"></button>
       <form action="#" method="post">
-        <div>
+        <div class="popup-row">
           <input id="input-name" type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
           <label for="input-name">Ваше имя:</label>
-          <p><textarea rows="10" cols="45" name="text">Представьтесь, пожалуйста</textarea></p>
-        </div>
-        <div>
+        <div class="popup-row">
           <input id="input-mail" type="text" name="e-mail" value="mail" placeholder="Для отправки ответа">
           <label for="input-mail">Ваш e-mail:</label>
-          <p><textarea rows="10" cols="45" name="text">Для отправки ответа</textarea></p>
         </div>
-        <div>
-          <input id="input-text" type="text" name="text" value="text" placeholder="В свободной форме">
+        <div class="popup-row">
+          <textarea id="input-text" rows="10" cols="45" name="text">В свободной форме</textarea>
           <label for="input-text">Текст письма:</label>
-          <p><textarea rows="10" cols="45" name="text">В свободной форме</textarea></p>
-        </div>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
- </body>
+  </body>
 </html>
