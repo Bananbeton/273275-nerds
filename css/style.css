@@ -1,0 +1,21 @@
+body {
+  font-size: 16pt;
+  font-family: "Roboto Regular";
+  color: #3f3f3f;
+  font-weight: normal;
+  line-height: 24pt;
+}
+.top-header-title {
+  font-size: 55pt;
+  font-family: "Roboto Medium";
+  color: #3f3f3f;
+  font-weight: normal;
+  line-height: 55pt;
+}
+.product-name {
+  font-size: 24pt;
+  font-family: "Roboto Bold";
+  color: #3f3f3f;
+  font-weight: bold;
+  line-height: 30pt;
+}
