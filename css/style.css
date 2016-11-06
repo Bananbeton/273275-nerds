@@ -19,3 +19,136 @@ body {
   font-weight: bold;
   line-height: 30pt;
 }
+.clearfix:after {
+  content:"";
+  display: table;
+  clear: both;
+}
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main-header {
+  margin-bottom: 80px;
+  }
+.top-header {
+
+}
+.index-logo {
+  width: 160px;
+  height: 65px;
+  float: left;
+}
+.main-navigation {
+  width: 820px;
+  float: left;
+}
+.user-block {
+  width: 160px;
+  float: right;
+}
+.top-header-title {
+  float: left;
+  width: 380px;
+}
+.top-header-text {
+  float: left;
+  width: 360px;
+}
+btn {
+
+}
+.product-items {
+  margin-bottom: 80px;
+}
+.product-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+}
+.product-item:last-child {
+  margin-right: 0;
+}
+.about {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-bottom: 80px;
+}
+.block-left {
+  float: left;
+  width: 660px;
+}
+.about-title {
+  float: left;
+  width: 660px;
+}
+.block-title {
+  float: left;
+}
+
+.block-right {
+  width: 360px;
+  float: right;
+}
+.block-right-logo {
+  width: 360px;
+  height: 208px;
+  float: right;
+}
+.features {
+  width: 360px;
+  float: right;
+  margin-left: 20px;
+}
+.feature {
+  width: 100px;
+  float: right;
+  margin-left: 20px;
+}
+.features:last-child {
+  margin-left: 0px;
+}
+.clients {
+  width: 1160px;
+  float: left;
+}
+.client {
+  display: inline-block;
+  width: 280px;
+  float: left;
+  margin-left: 20px;
+}
+.client:last-child {
+  margin-left: 0px;
+}
+.main-footer {
+  margin-top: 80px;
+}
+.map {
+  width: 1440px;
+  float: left;
+  backgroubd:
+}
+.bottom-footer {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.social-btns {
+  display: inline-block;
+  width: 260px;
+  float: left;
+}
+.social-btn {
+  display: inline-block;
+  width: 80px;
+  float: left;
+  margin-right: 10px;
+}
+.social-btns:last-child {
+  margin-right: 0px;
+}
+.footer-promo {
+  float: right;
+    width: 560px;
+}
