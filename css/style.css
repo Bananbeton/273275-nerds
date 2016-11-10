@@ -505,7 +505,7 @@ body {
 }
 
 .main-navigation {
-  width: 820px;
+  width: 440px;
   float: left;
 }
 
@@ -690,7 +690,6 @@ body {
 .filters {
   float: left;
   width: 260px;
-  margin-right: 140;
 }
 
 .filter {
@@ -712,43 +711,59 @@ body {
   text-transform: uppercase;
 }
 
-.catalog {
+.catalog-sort {
   float: left;
-  width: 760px;
+  width: 680px;
+}
+
+.arrows {
+  float: right;
+  width: 40px;
 }
 
 .sort-title {
-  display: inline-block;
-  vertical-align: bottom;
+  float: left;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-right: 270px;
 }
 
 .sort-type ul {
+  float: left;
   font-size: 0;
   padding: 0;
   list-style: none;
+  margin: 0;
+  width: 280px;
 }
 
 .sort-type li {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;;
   font-size: 14px;
   margin-right: 20px;
   text-transform: uppercase;
+}
+
+.items {
+  float: left;
+  width: 760px;
+  margin: 0;
+  font-size: 0;
 }
 
 .item {
   display: inline-block;
   vertical-align: top;
   width: 360px;
-  margin-right: 40px;
   margin-bottom: 60px;
+  margin-right: 40px;
 }
 
-.item:nth-child(1n) {
+.item:nth-child(2n) {
   margin-right: 0px;
+
 }
 
 .item-title {
@@ -758,16 +773,18 @@ body {
 }
 
 .pagination ul {
+  width: 440px;
   font-size: 0;
   padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .pagination li {
   display: inline-block;
-  vertical-align: bottom;
+  vertical-align: middle;
   font-size: 14px;
-  margin-right: 20px;
+  width: 50px;
   text-transform: uppercase;
 }
 
@@ -777,7 +794,8 @@ body {
 }
 
 .popup {
-  float: left;
+  display: inline-block;
+  vertical-align: middle;
   width: 590px;
-  margin-left: 240;
+  margin: 0 auto;
 }

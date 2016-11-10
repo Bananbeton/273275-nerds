@@ -28,6 +28,7 @@
               <a href="#">Контакты</a>
               </li>
             </ul>
+          </nav>
           <div class="user-block">
             <a class="cart" href="#"><img src="img/cart-icon.png" width="15" height="15">Корзина</a>
           </div>
@@ -85,27 +86,27 @@
           </div>
         </form>
       </aside>
-      <section class="catalog clearfix">
-        <div class="catalog-sort">
-          <div class="sort-title filter-title">Сортировать:</div>
+      <section class="catalog">
+        <div class="catalog-sort clearfix">
+          <div class="sort-title">Сортировать:</div>
           <ul class="sort-type">
-              <li>
-                <a class="active">По цене</a>
-              </li>
-              <li>
-                <a href="#">По типу</a>
-              </li>
-              <li>
-                <a href="#">По названию</a>
-              </li>
-            </ul>
-          </div>
+            <li>
+              <a class="active">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По названию</a>
+            </li>
+          </ul>
           <div class="arrows">
             <a class="active"></a>
             <a class="arrow-up" href=#></a>
           </div>
         </div>
-        <div class="items">
+      </div>
+        <div class="items clearfix">
           <section class="item">
             <div class="item-head">
               <div class="circe"></div>
@@ -184,21 +185,21 @@
               <a class="btn" href="#">9 900 руб.</a>
             </div>
           </section>
+          <ul class="pagination">
+            <li>
+              <a class="active">1</a>
+            </li>
+            <li>
+              <a href="#">2</a>
+            </li>
+            <li>
+              <a href="#">3</a>
+            </li>
+            <li class="btn page-next">
+              <a class="page-next" href="#">Следующая</a>
+            </li>
+          </ul>
         </div>
-        <ul class="pagination">
-          <li>
-            <a class="active">1</a>
-          </li>
-          <li>
-            <a href="#">2</a>
-          </li>
-          <li>
-            <a href="#">3</a>
-          </li>
-          <li class="btn page-next">
-            <a class="page-next" href="#">Следующая</a>
-          </li>
-        </ul>
       </section>
     </main>
     <footer class="main-footer">
@@ -231,15 +232,16 @@
       <button class="esc" type="button"><img src="img/close-cross.png" width="21" height="21" alt="esc"></button>
       <form action="#" method="post">
         <div class="popup-row">
-          <input id="input-name" type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
           <label for="input-name">Ваше имя:</label>
+          <input id="input-name" type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
         <div class="popup-row">
-          <input id="input-mail" type="text" name="e-mail" value="mail" placeholder="Для отправки ответа">
           <label for="input-mail">Ваш e-mail:</label>
+          <input id="input-mail" type="text" name="e-mail" value="mail" placeholder="Для отправки ответа">
         </div>
         <div class="popup-row">
-          <textarea id="input-text" rows="10" cols="45" name="text">В свободной форме</textarea>
           <label for="input-text">Текст письма:</label>
+          <textarea id="input-text" rows="10" cols="45" name="text">В свободной форме</textarea>
+        </div>
         <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
