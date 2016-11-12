@@ -3,13 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="top-header">
+        <div class="top-header clearfix">
           <div class="index-logo">
-            <a href=#><img src="img/index-logo.png" width="368" height="204" alt="Nerds"></a>
+            <a href=#><img src="img/nerds-logo.png" width="160" height="65" alt="Nerds"></a>
           </div>
           <nav class="main-navigation">
             <ul>
@@ -20,53 +22,48 @@
                 <a href="#">Клиенты</a>
               </li>
               <li>
-                <a class="active">Магазин</a>
+                <a href="#">Магазин</a>
               </li>
               <li>
               <a href="#">Контакты</a>
               </li>
             </ul>
+          </nav>
           <div class="user-block">
-            <a class="cart" href="#">Корзина</a>
+            <a class="cart" href="#"><img src="img/cart-icon.png" width="15" height="15">Корзина</a>
           </div>
-          <p class="top-header-title">Долго, дорого, скурпулезно.</p>
-          <p class="top-header-text">Математически выверенный дизайн для ващего сайта или мобильного
-          приложения.</p>
-          <a class="btn" href="#">Узнать больше</a>
         </div>
-        <div class="index-logo">
-          <a><img src="img/index-logo.png" width="368" height="204" alt="Nerds"></a>
+        <div class="slider">
+          <div>здесь будет слайдер</div>
         </div>
-      </div>
-      <div class="slider">
       </div>
     </header>
     <main class="container">
-      <div class="product-items">
+      <div class="product-items clearfix">
         <div class="product-item">
-          <img src="img/web.jpeg" width="368" height="204" alt="Веб-сайты">
+          <img src="img/illustration-1.jpg" width="300" height="146" alt="Веб-сайты">
           <h2 class="product-name">Веб-сайты</h2>
           <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
           <a class="btn" href="#">Заказать</a>
         </div>
         <div class="product-item">
-          <img src="img/apps.jpeg" width="368" height="204" alt="Приложения">
+          <img src="img/illustration-2.jpg" width="300" height="146" alt="Приложения">
           <h2 class="product-name">Приложения</h2>
           <p>Покорите топ-10 приложений в AppStore и Google Play</p>
           <a class="btn btn-green" href="#">Заказать</a>
         </div>
         <div class="product-item">
-          <img src="img/presentation.jpeg" width="368" height="204" alt="Презентации">
+          <img src="img/illustration-3.jpg" width="300" height="146" alt="Презентации">
           <h2 class="product-name">Презентации</h2>
           <p>Вы даже не подозреваете, насколько вы изумительны!</p>
           <a class="btn btn-yellow" href="#">Заказать</a>
         </div>
       </div>
-      <section class="about">
+      <section class="about clearfix">
         <div class="block-left">
           <h1 class="about-title">Мы-маленькая, но гордая дизайн-студия из Краснодара.</h1>
           <p>Исповедуем принципы минимализма и чистоты.Ставим математический
-          расчет превыше креатиыв. Работаем не покладая рук, как роботы</p>
+          расчет превыше креатива. Работаем не покладая рук, как роботы</p>
           <p class="block-title">Выполняем заказы на разработку:</p>
           <ul>
             <li>Веб-сайтов любой сложности</li>
@@ -74,12 +71,12 @@
             <li>Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div >
-        <div class="block-right">
+        <div class="block-right clearfix">
           <div class="block-right-logo">
-            <img src="img/blockright-logo.png" width="368" height="204" alt="Nerds">
+            <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Nerds">
           </div>
           <p class="block-title">С 2004 года любим точность во всем:</p>
-          <div class="features">
+          <div class="features clearfix">
             <div class="feature">
               <div class="feature-title">146%</div>
               <div class="feature-description">Уровень самоотдачи</div>
@@ -95,10 +92,10 @@
         </div>
       </section>
       <div class="clients">
-        <a class="client" href=#><img src="img/HTMLAcademy-logo.png" width="368" height="204" alt="HTML Academy"></a>
-        <a class="client" href=#><img src="img/Barbershop-logo.png" width="368" height="204" alt="Barbershop Borodinski"></a>
-        <a class="client" href=#><img src="img/Pink-logos.png" width="368" height="204" alt="Pink"></a>
-        <a class="client" href=#><img src="img/Mishka-logos.png" width="368" height="204" alt="Mishka"></a>
+        <a class="client" href=#><img src="img/logo-1.png" width="199" height="68" alt="HTML Academy"></a>
+        <a class="client" href=#><img src="img/logo-2.png" width="209" height="90" alt="Barbershop Borodinski"></a>
+        <a class="client" href=#><img src="img/logo-3.png" width="185" height="52" alt="Pink"></a>
+        <a class="client" href=#><img src="img/logo-4.png" width="173" height="84" alt="Mishka"></a>
       </div>
     </main>
     <footer class="main-footer">
@@ -113,14 +110,14 @@
         </div>
       </div>
       <div class="bottom-footer">
-        <div class="container">
+        <div class="container clearfix">
           <div class="social-btns">
             <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
             <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
             <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
           </div>
           <div class="footer-promo">
-            <p class="footer">Давайте дружить, это выгодно!</p>
+            <p class="footer-promo-title">Давайте дружить, это выгодно!</p>
             <p>Скидка 10% для друзей из социальных сетей.</p>
           </div>
         </div>
@@ -128,7 +125,7 @@
     </footer>
     <div class="popup">
       <p class="popup-title">Напишите нам</p>
-      <button class="esc" type="button"></button>
+      <button class="esc" type="button"><img src="img/close-cross.png" width="21" height="21" alt="esc"></button>
       <form action="#" method="post">
         <div class="popup-row">
           <input id="input-name" type="text" name="name" value="name" placeholder="Представьтесь, пожалуйста">
