@@ -731,17 +731,22 @@ body {
 
 .arrows {
   width: 40px;
+  float: right;;
 }
 
 .sort-title {
+  float: left;
   font-size: 18px;
   font-weight: 700;
   text-transform: uppercase;
   width: 130px;
   margin: 0;
+  margin-right: 260px;
+
 }
 
 .sort-type ul {
+  float: left;
   font-size: 0;
   padding: 0;
   list-style: none;
@@ -768,6 +773,7 @@ body {
   width: 360px;
   margin-bottom: 60px;
   margin-right: 40px;
+  text-align: center;
 }
 
 .item:nth-child(2n) {
@@ -807,4 +813,5 @@ body {
   vertical-align: middle;
   width: 590px;
   margin: 0 auto;
+  text-align: center;
 }
