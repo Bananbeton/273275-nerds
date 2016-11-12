@@ -787,7 +787,7 @@ body {
   text-transform: uppercase;
 }
 
-.pagination ul {
+.pagination {
   width: 440px;
   font-size: 0;
   padding: 0;
