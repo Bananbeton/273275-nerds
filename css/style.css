@@ -540,6 +540,7 @@ body {
 .page-title {
   font-size: 55px;
   font-weight: 500;
+  line-height: normal;
 }
 
 .top-header-title {
