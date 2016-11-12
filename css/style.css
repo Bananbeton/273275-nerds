@@ -743,10 +743,10 @@ body {
   width: 130px;
   margin: 0;
   margin-right: 260px;
-
+  margin-bottom: 60px;
 }
 
-.sort-type ul {
+.sort-type {
   float: left;
   font-size: 0;
   padding: 0;
