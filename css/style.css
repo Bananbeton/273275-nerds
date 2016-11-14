@@ -505,6 +505,14 @@ body {
   margin-top: 50px;
 }
 
+.index-logo:hover {
+  opacity: 0.8;
+}
+
+.index-logo:active {
+  opacity: 0.3;
+}
+
 .index-logo :hover {
   opacity: 20%;
 }
@@ -546,20 +554,25 @@ body {
 }
 
 .main-navigation a:active {
+  opacity: 0.3;
+  color: #000000;
+}
+
+.active {
   border-bottom: 2px solid maroon;
   padding-bottom: 10px;
   border-color: #fb565a;
 }
 
 .user-block {
-  display: inline-block;
-  width: 160px;
+  width: 110px;
   float: right;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
   margin-top: 80px;
   position: relative;
+  text-align: right;
 }
 
 .user-block a {
@@ -567,25 +580,28 @@ body {
   text-decoration: none;
 }
 
-.user-block a:hover {
+.user-block:hover {
   color: #fb565a;
 }
 
-.user-block a:active {
-  border-bottom: 2px solid maroon;
-  padding-bottom: 10px;
-  border-color: #fb565a;
+.user-block :hover {
+  color: #fb565a;
+}
+
+.user-block:active {
+  opacity: 0.3;
+  color: #000000;
 }
 
 .user-block::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 4px;
+  left: 0;
   width: 15px;
   height: 15px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -10px -93px;
+  background-position: -10px -70px;
 }
 
 .sprite {
@@ -594,34 +610,64 @@ body {
   display: block;
 }
 
+.sprite-browser {
+  width: 360px;
+  height: 40px;
+  background-position: -10px -10px;
+}
+
+.sprite-cart-icon {
+  width: 15px;
+  height: 15px;
+  background-position: -10px -70px;
+}
+
+.sprite-checkbox-off {
+  width: 23px;
+  height: 23px;
+  background-position: -45px -70px;
+}
+
+.sprite-checkbox-on {
+  width: 27px;
+  height: 23px;
+  background-position: -88px -70px;
+}
+
 .sprite-close-cross {
   width: 21px;
   height: 21px;
-  background-position: -10px -10px;
+  background-position: -135px -70px;
 }
 
 .sprite-fb-icon {
   width: 12px;
   height: 22px;
-  background-position: -10px -51px;
-}
-
-.sprite-icon-basket {
-  width: 15px;
-  height: 15px;
-  background-position: -10px -93px;
+  background-position: -176px -70px;
 }
 
 .sprite-insta-icon {
   width: 21px;
   height: 21px;
-  background-position: -10px -128px;
+  background-position: -208px -70px;
+}
+
+.sprite-radio-off {
+  width: 25px;
+  height: 25px;
+  background-position: -249px -70px;
+}
+
+.sprite-radio-on {
+  width: 25px;
+  height: 25px;
+  background-position: -294px -70px;
 }
 
 .sprite-vk-icon {
   width: 26px;
   height: 15px;
-  background-position: -10px -169px;
+  background-position: -339px -70px;
 }
 
 .page-title {
@@ -641,6 +687,8 @@ body {
 
 .product-items {
   margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 80px;
 }
 
 .product-item {
@@ -648,6 +696,7 @@ body {
   width: 300px;
   margin-right: 100px;
 }
+
 .product-name {
   font-size: 24px;
   font-weight: 700;
@@ -660,6 +709,7 @@ body {
 
 .about {
   margin-bottom: 80px;
+  border-bottom: 2px solid #eeeeee;
 }
 
 .about-title {
@@ -685,6 +735,7 @@ body {
 .block-left {
   float: left;
   width: 660px;
+  padding-bottom: 50px;
 }
 
 .about-title {
@@ -702,6 +753,10 @@ body {
 
 .block-left li {
   margin-bottom: 35px;
+}
+
+.block-left ul {
+  list-style: none;
 }
 
 .block-right {
@@ -728,6 +783,9 @@ body {
   width: 1160px;
   font-size: 0;
   text-align: center;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 80px;
+  padding-bottom: 30px;
 }
 
 .client {
@@ -735,6 +793,15 @@ body {
   vertical-align: middle;
   width: 280px;
   margin-right: 10px;
+  opacity: 0.2;
+}
+
+.client:hover {
+  opacity: 1;
+}
+
+.client:active {
+  opacity: 0.1;
 }
 
 .client:last-child {
@@ -752,8 +819,8 @@ body {
 }
 
 .write-us {
+  width: 320px;
   padding: 47px 50px;
-  width: 220px;
   margin: 0;
 }
 
@@ -766,7 +833,6 @@ body {
 }
 
 .contacts {
-  width: 220px;
   padding: 0;
   margin-bottom: 40px;
   text-decoration: none;
@@ -796,19 +862,27 @@ body {
   position: relative;
 }
 
-.social-btn::before {
-  content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  background-image: : transparent url("../img/spritesheet.png");
-  background-repeat: no-repeat;
-}
-
 .social-btn-vk::before {
+  position: absolute;
   width: 26px;
   height: 15px;
-  background-position: -10px -169px;
+  transform: translate(-50%,-50%);
+  left: 4px;
+  top: 0;
+  background-image: : transparent url("../img/sprite.png") no-repeat;
+  background-position: -339px -70px;
+}
+
+.sprite-fb-icon {
+  width: 12px;
+  height: 22px;
+  background-position: -176px -70px;
+}
+
+.sprite-insta-icon {
+  width: 21px;
+  height: 21px;
+  background-position: -208px -70px;
 }
 
 .social-btn:last-child {
@@ -847,6 +921,16 @@ body {
   vertical-align: left;
   width: 260px;
   margin-bottom: 50px;
+}
+
+.filter-box {
+  list-style: none;
+  padding: 0;
+}
+
+.filter-row {
+  list-style: none;
+  padding: 0;
 }
 
 .filter-title {
@@ -943,7 +1027,15 @@ body {
 .sort-type a{
   text-decoration: none;
   color: #000000;
-  opacity: 30%;
+  opacity: 0.3;
+}
+
+.sort-type a:hover {
+  opacity: 0.6;
+}
+
+.sort-type a:active {
+  opacity: 1;
 }
 
 .items {
