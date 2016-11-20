@@ -50,7 +50,7 @@
             </div>
             <div class="price-controls">
               <label class="min-price">от <input name="min-price" type="text" value="0"></label>
-              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15 000"></label>
             </div>
           </div>
           <div class="filter">
@@ -215,13 +215,12 @@
     </main>
     <footer class="main-footer">
       <div class="map">
-        <div class="map-marker"></div>
         <div class="container">
           <div class="write-us">
             <h2 class="footer-title">Nerds design studio</h2>
             <p class="contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
             <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
-            <a class="btn" href="#">Напишите нам</a>
+            <a class="btn open-popup" href="#">Напишите нам</a>
           </div>
         </div>
       </div>
@@ -240,15 +239,20 @@
       </div>
     </footer>
     <div class="popup">
-      <p class="popup-title">Напишите нам</p>
-      <button class="esc" type="button"></button>
+      <div class="popup-head">
+        <p class="popup-title">Напишите нам</p>
+        <button class="esc" type="button"></button>
+      </div>
       <form action="#" method="post">
-        <div class="popup-left">
-          <label class="popup-row-title" for="input-name">Ваше имя:</label>
-          <input id="input-name" type="text" name="name" value="Представьтесь, пожалуйста" placeholder="Представьтесь, пожалуйста">
-        <div class="popup-right">
-          <label class="popup-row-title" for="input-mail">Ваш e-mail:</label>
-          <input id="input-mail" type="text" name="e-mail" value="Для отправки ответа" placeholder="Для отправки ответа">
+        <div class="popup-row clearfix">
+          <div class="popup-left">
+            <label class="popup-row-title" for="input-name">Ваше имя:</label>
+            <input id="input-name" type="text" name="name" value="Представьтесь, пожалуйста" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="popup-right">
+            <label class="popup-row-title" for="input-mail">Ваш e-mail:</label>
+            <input id="input-mail" type="text" name="e-mail" value="Для отправки ответа" placeholder="Для отправки ответа">
+          </div>
         </div>
         <div class="popup-row">
           <label class="popup-row-title" for="input-text">Текст письма:</label>
@@ -257,5 +261,31 @@
         <button class="btn popup-btn" type="submit">Отправить</button>
       </form>
     </div>
+    <script>
+      var btn = document.querySelector(".open-popup");
+      var popup = document.querySelector(".popup");
+      var close = popup.querySelector(".esc");
+      var form = popup.querySelector("form");
+      var name = popup.querySelector("[name=name]");
+      var email = popup.querySelector("[name=e-mail]");
+      var text = popup.querySelector("[name=text]");
+
+
+      btn.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.add("popup-show")
+      });
+
+      close.addEventListener("click", function(event) {
+        event.preventDefault();
+        popup.classList.remove("popup-show");
+      });
+
+      form.addEventListener("submit", function(event) {
+        if (!name.value || !email.value || !text.value) {
+            event.preventDefault();
+          }
+      });
+    </script>
   </body>
 </html>
