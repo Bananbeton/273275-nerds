@@ -38,10 +38,19 @@
     </header>
     <main class="container clearfix">
       <aside class="filters">
-        <form action="#" method="get">
-          <div class="filter">
-            <div class="filter-title">Стоимость:</div>
-            <div class="filter-slider">
+        <form action="form.php" method="get">
+          <div class="range-filter">
+            <div class="filter-title range-filter-title">Стоимость:</div>
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar" ></div>
+              </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <div class="price-controls">
+              <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+              <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
             </div>
           </div>
           <div class="filter">
@@ -85,7 +94,7 @@
                 <label for="box-cart">Корзина</label>
               </li>
             </ul>
-            <button class="btn btn-grey" type="submit">Показать</button>
+            <button class="btn filter-btn" type="submit">Показать</button>
           </div>
         </form>
       </aside>
@@ -104,7 +113,7 @@
             </li>
           </ul>
           <div class="arrows">
-            <a class="active"></a>
+            <a class="active arrow-down"></a>
             <a class="arrow-up" href=#></a>
           </div>
         </div>
@@ -206,11 +215,12 @@
     </main>
     <footer class="main-footer">
       <div class="map">
+        <div class="map-marker"></div>
         <div class="container">
           <div class="write-us">
             <h2 class="footer-title">Nerds design studio</h2>
             <p class="contacts">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-            <p class="contacts">тел. +7 (812) 275-75-75</p>
+            <p class="contacts-tel">тел. +7 (812) 275-75-75</p>
             <a class="btn" href="#">Напишите нам</a>
           </div>
         </div>
