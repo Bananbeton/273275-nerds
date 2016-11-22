@@ -1,4 +1,3 @@
-<script>
   var btn = document.querySelector(".open-popup");
   var popup = document.querySelector(".popup");
   var close = popup.querySelector(".esc");
@@ -23,4 +22,3 @@
         event.preventDefault();
       }
   });
-</script>

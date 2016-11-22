@@ -589,8 +589,7 @@ body {
 }
 
 .user-block a:active {
-  opacity: 0.3;
-  color: #000000;
+  color: rgba(255, 0, 0, 0.3);
 }
 
 .cart::before {
@@ -940,25 +939,34 @@ sup {
   vertical-align: middle;
   width: 280px;
   margin-right: 10px;
-  opacity: 0.2;
   position: relative;
 }
 
+.client img {
+  opacity: 0.2;
+}
+
 .client::after {
+  content: "";
   position: absolute;
   transform: translate(-50%, -50%);
-  top:50%;
+  top:40%;
   left: 280px;
   width: 2px;
   height: 52px;
   background-color: #eeeeee;
-}
-
-.client:hover {
   opacity: 1;
 }
 
-.client:active {
+.client:last-child::after {
+  display: none;
+}
+
+.client img:hover {
+  opacity: 1;
+}
+
+.client img:active {
   opacity: 0.1;
 }
 
@@ -1120,7 +1128,7 @@ sup {
   display: inline-block;
   vertical-align: left;
   width: 260px;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 
 .filter-row li {
@@ -1332,6 +1340,8 @@ sup {
   width: 260px;
   background-color: #eeeeee;
   color: #000000;
+  margin-top: 35px;
+  cursor: pointer;
 }
 
 .slide .btn{
@@ -1364,38 +1374,58 @@ sup {
 }
 
 .catalog-sort {
-  width: 680px;
+  width: 760px;
 }
-
 
 .arrows {
-  align: top;
+  float: right;
   position: relative;
-  margin: 0;
-  padding: 0;
+  width: 40px;
+  font-size: 0;
 }
 
-.arrows a::before {
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.arrow::before {
   content: "";
   position: absolute;
   top: 5px;
   background-image: url("../img/sprite.png");
   background-repeat: no-repeat;
+  opacity: 0.2;
+}
+
+.arrow:hover::before {
   opacity: 0.4;
+}
+
+.arrow:active::before {
+  opacity: 1;
+}
+
+.arrow-active::before {
+  opacity: 1;
+}
+
+.arrow.active:hover::before {
+  opacity: 1;
 }
 
 .arrow-down::before {
   width: 9px;
   height: 9px;
   background-position: -124px -55px;
-  left: 713px;
+  left: 0px;
 }
 
 .arrow-up::before {
   width: 9px;
   height: 9px;
   background-position: -153px -55px;
-  left: 748px;
+  right: 0;
 }
 
 .arrows a.active {
@@ -1430,6 +1460,10 @@ sup {
   font-size: 14px;
   margin-right: 20px;
   text-transform: uppercase;
+}
+
+.sort-type li:last-child {
+  margin-right: 0px;
 }
 
 .sort-type a{
@@ -1675,6 +1709,7 @@ sup {
   position: absolute;
   top: 0;
   left: 754px;
+  cursor: pointer;
 }
 
 .popup-title {
@@ -1801,4 +1836,5 @@ sup {
   float: left;
   width: 260px;
   margin: 0;
+  cursor: pointer;
 }
