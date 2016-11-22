@@ -1142,7 +1142,7 @@ sup {
   font-weight: 700;
   color: #000000;
   margin: 0;
-  margin-top: 8px;
+  margin-top: 11px;
   position: relative;
   left: -200px;
 }
@@ -1161,7 +1161,7 @@ sup {
 .filters {
   margin: 0;
   padding: 0;
-  margin-top: 59px;
+  margin-top: 55px;
   float: left;
   width: 260px;
   font-size: 0;
@@ -1417,7 +1417,7 @@ sup {
   float: right;
   width: 760px;
   position: relative;
-  margin-top: 56px;
+  margin-top: 53px;
 }
 
 .catalog-sort {
