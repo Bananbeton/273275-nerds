@@ -503,7 +503,7 @@ body {
   height: 65px;
   float: left;
   margin-right: 200px;
-  margin-top: 50px;
+  margin-top: 47px;
 }
 
 .index-logo:hover {
@@ -522,6 +522,7 @@ body {
   width: 475px;
   float: left;
   margin-right: 200px;
+  margin-top: 78px;
 }
 
 .main-navigation ul {
@@ -546,7 +547,6 @@ body {
 
 .main-navigation a {
   display: block;
-  margin-top: 80px;
   margin-right: 20px;
   color: #000000;
   text-decoration: none;
@@ -571,7 +571,7 @@ body {
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
-  margin-top: 80px;
+  margin-top: 78px;
   position: relative;
   text-align: right;
   text-decoration: none;
@@ -893,15 +893,20 @@ body {
   line-height: 45px;
 }
 
-.block-left p {
+.block-left-about {
   margin: 0;
   margin-bottom: 40px;
+}
+
+.block-title-left  {
+  margin: 0;
+  margin-bottom: 25px;
 }
 
 .block-left li {
   margin: 0;
   padding: 0;
-  margin-bottom: 32px;
+  margin-bottom: 25px;
   position: relative;
   left: -3px;
 }
@@ -964,8 +969,7 @@ sup {
 .client {
   display: inline-block;
   vertical-align: middle;
-  width: 260px;
-  margin-right: 10px;
+  width: 300px;
   position: relative;
 }
 
@@ -985,6 +989,10 @@ sup {
   opacity: 1;
 }
 
+.client:first-child {
+  width: 280px;
+}
+
 .client:last-child::after {
   display: none;
 }
@@ -999,6 +1007,7 @@ sup {
 
 .client:last-child {
   margin-right: 0px;
+  width: 280px;
 }
 
 .map {
@@ -1022,7 +1031,7 @@ sup {
 }
 
 .write-us.btn {
-  width: 219px;
+  width: 217px;
   box-sizing: border-box;
   text-align: center;
 }
@@ -1730,13 +1739,13 @@ sup {
 }
 
 .popup {
-  width: 780px;
+  width: 760px;
   background-color: #ffffff;
   box-shadow: 0 18px 30px 10px rgba(122,122,122,0.6);
   min-height: 450px;
   position: relative;
   margin-bottom: 100px;
-  padding: 70px 100px 86px 80px;
+  padding: 75px 100px 86px 100px;
   top: 100px;
   z-index: 10000;
   transform: translate(-50%);
@@ -1826,7 +1835,7 @@ sup {
   border: 2px solid #d7dcde;
   border-radius: 3px;
   resize: none;
-  margin-bottom: 48px;
+  margin-bottom: 46px;
   outline: none;
   color: #444444;
 }
