@@ -1081,6 +1081,11 @@ sup {
   position: relative;
 }
 
+.social-btn:nth-child(3) {
+  margin-right: 0px;
+  margin-bottom: 20px;
+}
+
 .social-btn::before {
   content: "";
   position: absolute;
@@ -1119,10 +1124,6 @@ sup {
 
 .social-btn-insta:active::before {
   opacity: 0.3;
-}
-
-.social-btn:last-child {
-  margin-right: 0px;
 }
 
 .social-btn:hover {
