@@ -533,7 +533,7 @@ body {
 
 .main-navigation li {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -605,7 +605,7 @@ body {
   opacity: 0.3;
 }
 
-.slider{
+.slider {
   position:relative;
   height:432px;
   width: 1160px;
@@ -617,7 +617,7 @@ body {
   opacity:0;
 }
 
-.slider-controls{
+.slider-controls {
   position:absolute;
   bottom:95px;
   left:50%;
@@ -628,7 +628,7 @@ body {
   z-index:1000;
 }
 
-.slider-controls label{
+.slider-controls label {
   display:inline-block;
   width:8px;
   height:8px;
@@ -659,7 +659,7 @@ body {
   background:#c1c1c1;
 }
 
-.slide{
+.slide {
   position:absolute;
   top:0;
   left:0;
@@ -668,7 +668,7 @@ body {
   overflow:hidden;
 }
 
-.slide-text{
+.slide-text {
   width:520px;
   padding:30px 0;
   color:#283136;
@@ -679,7 +679,7 @@ body {
   margin-bottom: 40px;
 }
 
-.slide-title{
+.slide-title {
   font-size:55px;
   line-height:1;
   font-weight:600;
@@ -688,23 +688,23 @@ body {
   margin-bottom: 25px;
 }
 
-.slide{
+.slide {
   display:none;
 }
 
-.slide:nth-child(1){
+.slide:nth-child(1) {
   background-image:url("../img/slider-1.jpg");
   background-repeat:no-repeat;
   background-position:100% 0;
 }
 
-.slide:nth-child(2){
+.slide:nth-child(2) {
   background-image:url("../img/slider-2.jpg");
   background-repeat:no-repeat;
   background-position:100% 0;
 }
 
-.slide:nth-child(3){
+.slide:nth-child(3) {
   background-image:url("../img/slider-3.jpg");
   background-repeat:no-repeat;
   background-position:100% 0;
@@ -1013,6 +1013,7 @@ sup {
 .map {
   width: 100%;
   background-image: url("../img/map.jpg");
+  height: 311px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -1022,7 +1023,7 @@ sup {
 }
 
 .write-us {
-  width: 210px;
+  width: 219px;
   padding: 0 50px;
   padding-top: 35px;
   padding-bottom: 49px;
@@ -1047,7 +1048,8 @@ sup {
 
 .contacts {
   padding: 0;
-  margin-bottom: 22px;
+  margin: 0;
+  margin-bottom: 10px;
   text-decoration: none;
 }
 
@@ -1170,7 +1172,7 @@ sup {
 .filter {
   font-size: 16px;
   display: inline-block;
-  vertical-align: left;
+  vertical-align: middle;
   width: 260px;
   margin-bottom: 30px;
 }
@@ -1792,6 +1794,14 @@ sup {
   border-radius: 3px;
   outline: none;
   color: #444444;
+}
+
+.open-popup {
+  padding: 13px 20px;
+  width: 220px;
+  box-sizing: border-box;
+  margin-top: 23px;
+  text-align: center;
 }
 
 .popup input:hover {
